@@ -1,9 +1,12 @@
 import { MoralisProvider } from "react-moralis"
+import { NotificationProvider } from "web3uikit"
 
 function MyApp({ Component, pageProps }) {
     return (
         <MoralisProvider initializeOnMount={false}>
-            <Component {...pageProps} />
+            <NotificationProvider initializeOnMount={false}>
+                <Component {...pageProps} />
+            </NotificationProvider>
         </MoralisProvider>
     )
 }

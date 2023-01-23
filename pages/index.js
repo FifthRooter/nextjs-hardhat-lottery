@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css"
 import { useMoralis } from "react-moralis"
 import ManualHeader from "../components/ManualHeader"
 import Header from "../components/Header"
+import LotteryEntrance from "../components/LotteryEntrance"
 
 export default function Home() {
     const { isWeb3Enabled } = useMoralis()
@@ -15,6 +16,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header> </Header>
+            <LotteryEntrance />
         </div>
     )
 }
